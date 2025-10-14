@@ -1,4 +1,4 @@
-- name: remove existing app app_location
+- name: remove existing app location
   ansible.builds.file:
     path: "{{ app_location }}"
     state: absent
