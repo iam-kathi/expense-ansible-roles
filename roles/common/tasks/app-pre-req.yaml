@@ -1,8 +1,8 @@
 - name: remove existing app location
-  ansible.builds.file:
+  ansible.builtin.file:
     path: "{{ app_location }}"
     state: absent
-  ignore_errrors: true
+  ignore_errors: true
 
 - name: create app directory
   ansible.builtin.file:
